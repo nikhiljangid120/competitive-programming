@@ -6,8 +6,8 @@
 | **Difficulty** | Easy |
 | **Language** | CPP |
 | **Topic** | Math, String, Bit Manipulation, Simulation |
-| **Date Solved** | 7/5/2026 |
-| **Submission ID** | 2056759700 |
+| **Date Solved** | 7/17/2026 |
+| **Submission ID** | 2071439445 |
 
 **Problem Link:** https://leetcode.com/problems/add-binary/
 
