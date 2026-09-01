@@ -10,6 +10,5 @@
 | **Submission ID** | 2104686052 |
 
 **Problem Link:** https://leetcode.com/problems/reorganize-string/
-
 ---
 *Synced by [CodeAtlas](https://github.com)*
