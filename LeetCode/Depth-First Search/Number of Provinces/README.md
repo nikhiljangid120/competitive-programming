@@ -10,6 +10,5 @@
 | **Submission ID** | 2052693292 |
 
 **Problem Link:** https://leetcode.com/problems/number-of-provinces/
-
 ---
 *Synced by [CodeAtlas](https://github.com)*
