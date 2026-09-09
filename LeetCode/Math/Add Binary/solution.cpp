@@ -14,7 +14,6 @@ class Solution {
       ans += carry % 2 + '0';
       carry /= 2;
     }
-
     reverse(begin(ans), end(ans));
     return ans;
   }
