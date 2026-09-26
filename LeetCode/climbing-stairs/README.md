@@ -1,0 +1,21 @@
+# climbing-stairs
+
+- **Platform:** LeetCode
+- **Language:** C++
+
+## Solution
+
+```cpp
+class Solution {
+public:
+   int climbStairs(int n) {
+       vector<int>dp(n+1, -1);
+       return fun(n, dp);
+   }
+   int fun(int n, vector<int>&dp){
+       if(n<=1) return 1;
+       if(dp[n]!=-1) return dp[n];
+       return dp[n] = fun(n-1,dp) + fun(n-2, dp);
+   }
+};
+```
