@@ -1,0 +1,48 @@
+# Koko Eating Bananas
+
+- **Platform:** LeetCode
+- **Language:** code
+
+## Solution
+
+```
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+8
+7
+19
+20
+21
+22
+23
+24
+25
+        while(low<=high){
+            ll mid = low + (high - low)/2;
+            if(fun(mid, piles, h)){
+                ans = mid;
+                high = mid - 1;
+            }
+            else low = mid + 1;
+        }
+        return ans;
+    }
+        ll ans = high;
+        ll high = *max_element(piles.begin(), piles.end());
+    bool fun(ll speed, vector<int>& piles, int h){
+        ll totalHours = 0;
+        for(auto x:piles){
+            totalHours += (x + speed-1) / speed;
+            if(totalHours>h) return 0;
+        }
+        return totalHours<=h;
+No results
+```
