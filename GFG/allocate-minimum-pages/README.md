@@ -1,0 +1,38 @@
+# Allocate Minimum Pages
+
+- **Platform:** GFG
+- **Language:** code
+
+## Solution
+
+```
+for (int x : arr) {
+            if (currentPages + x > maxPages) {
+                students++;
+                currentPages = x;
+            } else {
+                currentPages += x;
+            }
+        }
+        return students <= k;
+    }
+public:
+    int findPages(vector<int> &arr, int k) {
+        int n = arr.size();
+        if (k > n) return -1;
+        long long low = *max_element(arr.begin(), arr.end());
+        long long high = accumulate(arr.begin(), arr.end(), 0LL); // Note 0LL!
+        long long ans = -1;
+        while (low <= high) {
+            long long mid = low + (high - low) / 2;
+            if (feasible(mid, arr, k)) {
+                ans = mid;
+                high = mid - 1;
+            } else {
+                low = mid + 1;
+            }
+        }
+        return (int)ans;
+    }
+};
+```
