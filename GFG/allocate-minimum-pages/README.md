@@ -1,12 +1,17 @@
 # Allocate Minimum Pages
 
 - **Platform:** GFG
-- **Language:** code
+- **Language:** C++
 
 ## Solution
 
-```
-for (int x : arr) {
+```cpp
+class Solution {
+  public:
+bool feasible(long long maxPages, const vector<int>& arr, int k) {
+        int students = 1;
+        long long currentPages = 0;
+        for (int x : arr) {
             if (currentPages + x > maxPages) {
                 students++;
                 currentPages = x;
@@ -31,8 +36,4 @@ public:
             } else {
                 low = mid + 1;
             }
-        }
-        return (int)ans;
-    }
-};
 ```
